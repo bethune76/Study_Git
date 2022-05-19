@@ -49,5 +49,12 @@
 ### $ git reset HEAD hello2.txt
 ##### - staging된 hello2.txt파일을 unstaging.
 ##### - <file>을 쓰지않으면, 모든 file을 unstaging.
-  
+### $ git reset HEAD^
+##### - commit까지 했어도 가장 마지막에 한 commit을 취소하고, unstaging한다.
+### $ git reset --soft HEAD^
+##### - 최근 commit을 하기 전 상태로 작업 트리를 되돌린다.
+### $ git reset --mixed HEAD^ | $ git reset
+##### - 최근 커밋과 스테이징을 하기전 상태로 작업트리를 되돌림 | $ git reset 과 같다.
+### $ git reset --hard HEAD^
+##### - 최근 커밋과 스테이징, 파일 수정 하기 전 상태로 되돌림. - 이 작업
   
