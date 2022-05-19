@@ -45,10 +45,9 @@
 ### $ git checkout -- hello.txt
 ##### checkout쓰고 -- 쓰고 공백한칸, 파일이름. | 작업트리에서 수정내용이 원래 파일로 돌아감.
 
-# git reset HEAD <file> | unstaging
-### $ git reset HEAD hello2.txt
-##### - staging된 hello2.txt파일을 unstaging.
-##### - <file>을 쓰지않으면, 모든 file을 unstaging.
+# git reset | 커밋 되돌리기 (이후 내용은 삭제)
+### $ git reset HEAD hello2.txt | staging된 hello2.txt파일을 unstaging.
+##### - -file- 을 쓰지않으면, 모든 file을 unstaging.
 ### $ git reset HEAD^
 ##### - commit까지 했어도 가장 마지막에 한 commit을 취소하고, unstaging한다.
 ### $ git reset --soft HEAD^
@@ -56,5 +55,12 @@
 ### $ git reset --mixed HEAD^ | $ git reset
 ##### - 최근 커밋과 스테이징을 하기전 상태로 작업트리를 되돌림 | $ git reset 과 같다.
 ### $ git reset --hard HEAD^
-##### - 최근 커밋과 스테이징, 파일 수정 하기 전 상태로 되돌림. - 이 작업
+##### - 최근 커밋과 스테이징, 파일 수정 하기 전 상태로 되돌림. - 이 작업은 되돌릴 수 없다.
+### $ git reset --hard [복사한 커밋 해시]
+##### - 해당 커밋 이후의 내용은 삭제하고, 해당 커밋으로 이동.
+
+# git revert | 커밋 삭제하지 않고 되돌리기
+### $ git revert [복사한 커밋 해시]
+##### - 편집기가 자동으로 열리면서 commit메세지를 입력할 수 있도록 해준다.
+###### 
   
