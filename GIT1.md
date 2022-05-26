@@ -35,6 +35,11 @@
 ##### - commit에 관련된 file까지 함께 나열.
 ### $ git log --oneline
 ##### - commit에 관련된 정보를 한줄로 보여줌.
+### $ git log --branches
+##### - 각 branch들의 최신 commit들을 같이 나열해 줌.
+### $ git log --graph
+##### - 각 branch들의 계통을 그래프를 그려서 보여줌. (가지치기 모양)
+
 
 # .gitignore | 버전관리에서 제외.
 ##### 버전관리 중인 directory안에 vim으로 .gitignore 파일을 만들어 그 안에 제외할 내용적기.
