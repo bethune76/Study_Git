@@ -33,6 +33,8 @@
 ##### - 방금수정한 파일과, 저장소에 있는 최신 파일의 차이를 보여줌.
 ### $ git log --stat
 ##### - commit에 관련된 file까지 함께 나열.
+### $ git log --oneline
+##### - commit에 관련된 정보를 한줄로 보여줌.
 
 # .gitignore | 버전관리에서 제외.
 ##### 버전관리 중인 directory안에 vim으로 .gitignore 파일을 만들어 그 안에 제외할 내용적기.
